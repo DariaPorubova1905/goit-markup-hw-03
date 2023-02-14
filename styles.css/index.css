@@ -20,28 +20,33 @@ ul{
     --logo-color-studio-one: #2E2F42;
     --footer-color: #E7E9FC;
     --nav-list-header-color: #2E2F42;
+    --bcd-button: #e7e9fc;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   
+}
+.container{
+    max-width: 1158px;
+    
 }
 .header{
     background: #FFFFFF;
-    box-sizing: border-box;
-    position: absolute;
     height: 72px;
-    left: 0px;
-    top: 0px;
     display: flex; 
     align-items: center;
+    border-bottom: 1px solid var(--bcd-button);
 }
 .container-logo{
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
-    
-    position: absolute;
     width: 115px;
     height: 24px;
-    left: 156px;
-    top: 24px;
 }
 .logo{
     font-family: 'Raleway', sans-serif ;
@@ -51,6 +56,7 @@ ul{
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding: 24px 0;
 }
 .logo-web{
     color: #4D5AE5;
@@ -73,14 +79,9 @@ ul{
 }
 .container-nav{
     display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     gap: 40px;
-    position: absolute;
-    left: 347px;
-    top: 8px;
+    
 }
 .nav-list:focus,
 .nav-list:hover{
@@ -107,27 +108,19 @@ ul{
 }
 
 .container-email{
-    position: absolute;
 width: 153px;
 height: 24px;
-left: 940px;
-top: 24px;
 }
 .container-number{
-    position: absolute;
 width: 151px;
 height: 24px;
-left: 1133px;
-top: 24px;
+
 
 }
 .section-one{
     background: #2E2F42;
-    position: absolute;
     width: 1440px;
     height: 600px;
-    left: 0px;
-    top: 72px;
 }
 .h-one{
     letter-spacing: 0.02em;
@@ -135,11 +128,8 @@ top: 24px;
     line-height: 1.07;
     color: #FFFFFF;
     line-height: 1.07;
-    position: absolute;
     width: 496px;
     height: 120px;
-    left: 472px;
-    top: 188px;
     text-align: center;
 }
 .button-text{
@@ -152,17 +142,12 @@ top: 24px;
     letter-spacing: 0.04em;
     line-height: 1.5;
     font-size: 16px;
-    flex-direction: row;
     align-items: flex-start;
     padding: 16px 32px;
     gap: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    position: absolute;
     height: 56px;
-    left: 636px;
-    top: 400px;
-    text-align: flex;
     align-items: center;
     display: flex;
 }
@@ -171,65 +156,24 @@ top: 24px;
 .button-text:focus{
     background-color: #404BBF;;
 }
+.section{
 
+}
 .container-section-two{
     color: #434455;
     position: absolute;
     width: 1128px;
     height: 104px;
-    top: 792px;
     display: flex;
 
 }
-.container-feature-one{
+.container-feature{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 8px;
-
-    position: absolute;
     width: 264px;
     height: 104px;
-    left: 156px;
 }
-.container-feature-two{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 444px;
-}
-.container-feature-tree{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 732px; 
-}
-.container-feature-four{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    
-    position: absolute;
-    width: 264px;
-    height: 104px;
-    left: 1020px;
-}
-
 .title-three{
     font-weight: 500;
     font-size: 20px;
@@ -245,141 +189,48 @@ top: 24px;
     height: 72px;
 }
 .section-tree{
-    position: absolute;
     width: 1128px;
     height: 412px;
-    left: 156px;
-    top: 1016px;
     display: flex;
 }
 .section-three-title-two{
     font-size: 36px;
     line-height: 1.11;
     color: #2E2F42;
-    position: absolute;
     width: 323px;
     height: 40px;
-    left: 559px;
-    top: 1016px;
     text-align: center;
     text-transform: capitalize;
 }
-.section-three-img-one{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    
-    position: absolute;
+.section-three-img{
     width: 360px;
     height: 300px;
-    left: 156px;
-    top: 1128px;
-}
-.section-three-img-two{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    
-    position: absolute;
-    width: 360px;
-    height: 300px;
-    left: 540px;
-    top: 1128px;
-    
-}
-.section-three-img-tree{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    
-    position: absolute;
-    width: 360px;
-    height: 300px;
-    left: 924px;
-    top: 1128px;
-    
 }
 
 .section-four{
     background-color: #F4F4FD;
     color: #434455;
-    position: absolute;
     width: 1440px;
     height: 732px;
-    left: 0px;
-    top: 1548px;
 
 }
 .ourteam{
     display: flex;
 }
-.tom{
+.team{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px 0px 32px;
     gap: 32px;
-    position: absolute;
     width: 264px;
     height: 380px;
-    left: 444px;
-    top: 1780px;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
-.mark{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 156px;
-    top: 1780px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
-.camila{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 732px;
-    top: 1780px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
-.daniel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
-    position: absolute;
-    width: 264px;
-    height: 380px;
-    left: 1020px;
-    top: 1780px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;
-}
+
 .tom-photo,
 .mark-photo,
 .camila-photo,
@@ -390,9 +241,7 @@ top: 24px;
 }
 .section-four-title-two{
     height: 40px;
-    left: 639px;
-    top: 1668px;
-    font-weight: 700;
+   font-weight: 700;
     font-size: 36px;
     line-height: 40px;
     text-align: center;
@@ -410,23 +259,11 @@ top: 24px;
     height: 56px;
     text-align: center;
 }
-.daniel-section-four-title-three{
+.section-four-title-three{
     height: 24px;
     text-align: center;
+}
 
-}
-.tom-section-four-title-three{
-    height: 24px;
-    text-align: center;
-}
-.mark-section-four-title-three{
-    height: 24px;
-    text-align: center;
-}
-.camila-section-four-title-three{
-    height: 24px;
-    text-align: center;
-}
 .section-four-container{
     display: flex;
     flex-direction: column;
@@ -434,7 +271,6 @@ top: 24px;
     align-items: center;
     padding: 0px;
     gap: 8px;
-
     width: 232px;
 }
 .text-mark{
@@ -462,35 +298,22 @@ top: 24px;
     color: #E7E9FC;
     letter-spacing: 0.02em;
     line-height: 1.5;
-    position: absolute;
     width: 1440px;
     height: 310px;
-    left: 0px;
-    top: 2280px;
     display: flex;
 }
 .container-footer{
-    position: absolute;
 width: 264px;
 height: 110px;
-margin-top: 100px;
-margin-bottom: 100px;
-
 }
 .logo-footer{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
-    position: absolute;
     width: 115px;
     height: 22px;
-    left: 156px;
 }
 .footer-text{
     padding-top: 16px;
-    position: absolute;
     width: 264px;
     height: 72px;
-    left: 156px;
 }
