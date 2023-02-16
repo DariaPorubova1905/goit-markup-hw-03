@@ -7,12 +7,12 @@ body{
     text-decoration: none;
     letter-spacing: 0.02em;
     position: relative;
-    width: 1440px;
-    height: 2074px;
-
+    width: 1158px;
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 :root{
     --brand-color: #434455;
@@ -22,28 +22,30 @@ ul{
     --logo-color-studio-one: #2E2F42;
     --footer-color: #E7E9FC;
     --nav-list-header-color: #2E2F42;
+    --bcd-button: #e7e9fc;
 }
-.header{
-    background: #FFFFFF;
-    box-sizing: border-box;
-    position: absolute;
-    height: 72px;
-    left: 0px;
-    top: 0px;
-    display: flex; 
-    align-items: center;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   margin-top: 0;
+   margin-bottom: 0;
 }
-.container-logo{
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-container{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    
-    position: absolute;
-    width: 115px;
-    height: 24px;
-    left: 156px;
-    top: 24px;
+    align-items: center;
 }
 .logo{
     font-family: 'Raleway', sans-serif ;
@@ -53,6 +55,7 @@ ul{
     text-transform: uppercase;
     letter-spacing: 0.03em;
     text-decoration: none;
+    padding: 24px 0;
 }
 .logo-web{
     color: #4D5AE5;
@@ -70,19 +73,16 @@ ul{
     line-height: 1.5;  
     text-decoration: none;
     list-style: none;
-    width: 66px;
-    height: 24px;
+    padding: 24px 0;
+    display: flex;
+    gap: 40px;
 }
 .container-nav{
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 0px;
     gap: 40px;
-    position: absolute;
-    left: 347px;
-    top: 8px;
+    display: flex;
+    padding-left: 76px;
+    padding-right: 332px;
 }
 .nav-list:focus,
 .nav-list:hover{
@@ -96,12 +96,16 @@ ul{
     letter-spacing: 0.02em;
     line-height: 1.5;
     list-style: none;
+    display: flex;
 }
 .container-navigation{
     display: flex;
 }
 .adress-list{
     display: flex;
+    padding: 0px;
+    gap: 40px;
+
 }
 .contact-list:focus,
 .contact-list:hover{
@@ -109,26 +113,20 @@ ul{
 }
 
 .container-email{
-    position: absolute;
 width: 153px;
 height: 24px;
-left: 940px;
-top: 24px;
 }
 .container-number{
-    position: absolute;
 width: 151px;
 height: 24px;
-left: 1133px;
-top: 24px;
 
-        }
+
+}
 .button{
             background: #F4F4FD;
             font-family: 'Roboto', sans-serif ;
             font-weight: 500;
             color: #4D5AE5;
-            letter-spacing: 0.04em;
             line-height: 1.5;
             font-size: 16px;
             box-sizing: border-box;
@@ -137,11 +135,15 @@ top: 24px;
             justify-content: center;
             align-items: center;
             width: 116px;
-            height: 48px;
             background: #F4F4FD;
             border: 1px solid #E7E9FC;
             border-radius: 4px;
             cursor: pointer;
+            margin-top: 96px ;
+            padding: 12px 24px;
+            margin-bottom: 72px;
+          
+
             
         }
         .button:hover,
@@ -153,40 +155,30 @@ top: 24px;
         }
         .container-button{
             display: flex;
-            flex-direction: row;
             align-items: flex-start;
             padding: 0px;
             gap: 24px;
-
-            position: absolute;
-            width: 586px;
-            height: 48px;
-            left: 427px;
-            top: 168px;
+            justify-content: center;
+            margin: 0 auto;
+            width: 69px;
         }
         .examples{
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            display: flex;
+            margin: 0 156px ;
         }
         .examples-one{
-            position: absolute;
-            width: 1128px;
-            height: 420px;
             display: flex;
+            margin-bottom: 48px;
+            gap: 24px;
         }
         .examples-two{
-            position: absolute;
-            width: 1128px;
-            height: 420px;
             display: flex;
+            margin-bottom: 48px;
+            gap: 24px;
         }
         .examples-three{
-            position: absolute;
-            width: 1128px;
-            height: 420px;
             display: flex;
+            padding-bottom: 120px;
+            gap: 24px;
         }
         .title-three{
             font-weight: 500;
@@ -194,140 +186,39 @@ top: 24px;
             color: #2E2F42;
             letter-spacing: 0.02em;
             line-height: 1.2;
+            margin-bottom: 8px;
+            margin-top: 32px;
+            margin-left: 16px;
         }
         .example-text{
             color: #434455;
             line-height: 1.5;
             letter-spacing: 0.02em;
+            margin-bottom: 32px;
+            margin-left: 16px;
         }    
-        .examples-one-one{
+        .examples-card{
             
             box-sizing: border-box;
-
-            position: absolute;
-            width: 360px;
-            height: 420px;
-            left: 156px;
-            top: 288px;
             background: #FFFFFF;
             border: 1px solid #E7E9FC;
-        }
-        .examples-one-two{
-            box-sizing: border-box;
-
-            position: absolute;
             width: 360px;
-            height: 420px;
-            left: 540px;
-            top: 288px;
-            background: #FFFFFF;
-            border: 1px solid #E7E9FC;
         }
-        .examples-one-three{
-            box-sizing: border-box;
-            position: absolute;
-            width: 360px;
-            height: 420px;
-            left: 924px;
-            top: 288px;
-            background: #FFFFFF;
-            border: 1px solid #E7E9FC;
-        }
-        .examples-two-one{
-            box-sizing: border-box;
-            position: absolute;
-            width: 360px;
-            height: 420px;
-            left: 156px;
-            top: 756px;
-            background: #FFFFFF;
-            border: 1px solid #E7E9FC;
-        }
-        .examples-two-two{
-            box-sizing: border-box;
-position: absolute;
-width: 360px;
-height: 420px;
-left: 540px;
-top: 756px;
-background: #FFFFFF;
-border: 1px solid #E7E9FC;
-        }
-        .examples-two-three{
-            box-sizing: border-box;
-position: absolute;
-width: 360px;
-height: 420px;
-left: 924px;
-top: 756px;
-background: #FFFFFF;
-border: 1px solid #E7E9FC;
-        }
-        .examples-three-one{
-            box-sizing: border-box;
-position: absolute;
-width: 360px;
-height: 420px;
-left: 156px;
-top: 1224px;
-background: #FFFFFF;
-border: 1px solid #E7E9FC;
-        }
-        .examples-three-two{
-            box-sizing: border-box;
-position: absolute;
-width: 360px;
-height: 420px;
-left: 540px;
-top: 1224px;
-background: #FFFFFF;
-border: 1px solid #E7E9FC;
-        }
-        .examples-three-three{
-            box-sizing: border-box;
-position: absolute;
-width: 360px;
-height: 420px;
-left: 924px;
-top: 1224px;
-background: #FFFFFF;
-border: 1px solid #E7E9FC;
-        }
+        
         .footer{
             background-color: #2E2F42;
             color: #E7E9FC;
             letter-spacing: 0.02em;
             line-height: 1.5;
-            position: absolute;
-            width: 1440px;
-            height: 310px;
-            left: 0px;
-            top: 2280px;
-            display: flex;
+            padding: 100px 0;
         }
         .container-footer{
-            position: absolute;
-        width: 264px;
-        height: 110px;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        
-        }
-        .logo-footer{
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-            position: absolute;
-            width: 115px;
-            height: 22px;
-            left: 156px;
-        }
-        .footer-text{
-            padding-top: 16px;
-            position: absolute;
             width: 264px;
             height: 72px;
-            left: 156px;
+        }
+        
+        .footer-text{
+            padding-top: 16px;
+        
         }
         

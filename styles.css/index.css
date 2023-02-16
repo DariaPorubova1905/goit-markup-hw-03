@@ -10,6 +10,8 @@ body{
 }
 ul{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 :root{
     --brand-color: #434455;
@@ -40,16 +42,9 @@ img{
     padding: 0 15px;
     margin: 0 auto;
 }
-.header{
-    background: #FFFFFF;
-    display: flex; 
-    align-items: center;
-    border-bottom: 1px solid var(--bcd-button);
-}
-.container-logo{
+.header-container{
     display: flex;
-    align-items: flex-start;
-    margin-top: 24px;
+    align-items: center;
 }
 .logo{
     font-family: 'Raleway', sans-serif ;
@@ -79,13 +74,14 @@ img{
     list-style: none;
     padding: 24px 0;
     display: flex;
-    margin-top: 24px;
+    gap: 40px;
 }
 .container-nav{
     padding: 0px;
     gap: 40px;
     display: flex;
-    
+    padding-left: 76px;
+    padding-right: 332px;
 }
 .nav-list:focus,
 .nav-list:hover{
@@ -108,7 +104,7 @@ img{
     display: flex;
     padding: 0px;
     gap: 40px;
-    margin-top: 24px;
+
 }
 .contact-list:focus,
 .contact-list:hover{
@@ -125,12 +121,12 @@ height: 24px;
 
 
 }
-.section-one{
+.hero{
     background: #2E2F42;
     text-align: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    width: 1440px;
+    padding: 188px 0;
+    width: 1158px;
+    gap: 48px;
 }
 .h-one{
     letter-spacing: 0.02em;
@@ -139,7 +135,11 @@ height: 24px;
     color: #FFFFFF;
     line-height: 1.07;
     text-align: center;
-    margin-bottom: 48px;
+    width: 496px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 64px;
+
 }
 .button-text{
     font-family: 'Roboto', sans-serif ;
@@ -155,6 +155,8 @@ height: 24px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     align-items: center;
+    margin: 0 auto;
+    display: block;
 }
 
 .button-text:hover,
@@ -170,7 +172,8 @@ height: 24px;
     gap: 24px;
 }
 .container-feature{
-    flex-basis: calc(100%-3*24px);
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    
 }
 .title-three{
     font-weight: 500;
@@ -178,16 +181,12 @@ height: 24px;
     line-height: 1.2;
     color: #2E2F42;
     letter-spacing: 0.02em;
-    height: 24px;
+    margin-bottom: 8px;
 }
 .section-two-text{
     color: #434455;
     gap:  24px;
-}
-.section-tree{
-    display: flex;
-    gap: 24px;
-    border: 1px solid #e7e9fc;
+
 }
 .section-three-title-two{
     font-size: 36px;
@@ -195,24 +194,25 @@ height: 24px;
     color: #2E2F42;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 .whatwearedoing{
     display: flex;
     gap: 24px;
-    border: 1px solid #e7e9fc;
+    padding-bottom: 120px;
 
 }
 
-.section-four{
+.section-ourteam{
     background-color: #F4F4FD;
     color: #434455;
+    padding-bottom: 120px;
 }
 .ourteam{
     display: flex;
     gap: 24px;
 }
 .team{
-    padding: 0px 0px 32px;
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -222,8 +222,7 @@ height: 24px;
 .mark-photo,
 .camila-photo,
 .daniel-photo{
-    width: 264px;
-    height: 260px;
+
     padding-top: 0px;
 }
 .section-four-title-two{
@@ -234,6 +233,7 @@ height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
     
 }
 .section-four-title-three{
@@ -243,51 +243,28 @@ height: 24px;
     letter-spacing: 0.02em;
     line-height: 1.2;
     width: 232px;
-    text-align: center;
-}
-.section-four-title-three{
-    text-align: center;
+    margin-bottom: 8px;
 }
 
 .section-four-container{
-    padding: 0px;
-}
-.text-mark{
-    width: 128px;
-    height: 24px;
     text-align: center;
+    padding: 32px 0;
+
 }
-.text-tom{
-    width: 144px;
-    height: 24px;
-    text-align: center;
-}
-.text-camila{
-    width: 75px;
-    height: 24px;
-    text-align: center;
-}
-.text-daniel{
-    width: 85px;
-    height: 24px;
-    text-align: center;
-}
+
 .footer{
     background-color: #2E2F42;
     color: #E7E9FC;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    padding: 100px 0;
 }
 .container-footer{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.logo-footer{
-    display: flex;
-    padding: 0px;
-}
-.footer-text{
-    padding-top: 16px;
     width: 264px;
     height: 72px;
+}
+
+.footer-text{
+    padding-top: 16px;
+
 }
