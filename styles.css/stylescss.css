@@ -311,9 +311,7 @@ img{
 
 }    
 .examples-card{
-    border: 1px solid #E7E9FC;
-    border-top: none;
-    
+ 
     flex-basis: calc((100% - 2 * 24px) / 3);
 }
 .card{
